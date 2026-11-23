@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLLIN | Traducción e Interpretación de Lenguas Indígenas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Top Header / Branding OLLIN -->
+    <header class="app-header">
+      <div class="brand-bar">
+        <div class="brand-logo-group">
+          <div class="ollin-symbol">
+            <span class="symbol-inner">◈</span>
+          </div>
+          <div>
+            <div class="brand-title-wrap">
+              <span class="brand-name">OLLIN</span>
+              <span class="brand-badge">MICROEMPRESA LINGÜÍSTICA</span>
+            </div>
+            <p class="brand-tagline">Traducción e Interpretación de Lenguas Indígenas de México</p>
+          </div>
+        </div>
+        
+        <div class="header-right-badges">
+          <div class="brand-stage-tag">
+            <span class="stage-pill">🇲🇽 Etapa 1: Náhuatl & Otomí</span>
+          </div>
+          <!-- Estado de Membresía Premium -->
+          <div id="premiumStatusBadge" class="premium-status-pill hidden">
+            <span>👑 OLLIN Premium Activo</span>
+            <button id="lockSessionBtn" class="pill-mini-btn" title="Cerrar sesión de pago">Bloquear</button>
+          </div>
+        </div>
+      </div>
+      
+      <p class="mission-text">
+        Facilitamos la comunicación y el acceso a la información y a los servicios para <strong>instituciones públicas</strong>, <strong>negocios</strong> y <strong>personas</strong>.
+      </p>
+
+      <!-- Navigation Tabs: Inicio al frente -->
+      <nav class="main-tabs" id="mainTabs">
+        <button class="nav-tab active" data-tab="tab-home">
+          <span class="tab-icon">🏛️</span>
+          <span>Inicio & Asesoría OLLIN</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-translator">
+          <span class="tab-icon">🔄</span>
+          <span>Traductor & Fonética</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-notices">
+          <span class="tab-icon">📢</span>
+          <span>Avisos Institucionales</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-library">
+          <span class="tab-icon">📚</span>
+          <span>Biblioteca de Documentos <span class="tab-lock-tag">👑 $300/mes</span></span>
+        </button>
+        <button class="nav-tab" data-tab="tab-quote">
+          <span class="tab-icon">📋</span>
+          <span>Cotizador de Servicios <span class="tab-lock-tag">👑 $300/mes</span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ========================================================= -->
+    <!-- TAB 1: INICIO, ASESORÍA Y PLANES OLLIN (AL FRENTE)         -->
+    <!-- ========================================================= -->
+    <div class="tab-content active" id="tab-home">
+      <section class="section-container">
+        
+        <!-- Hero de Inicio -->
+        <div class="home-hero-banner">
+          <div class="hero-left">
+            <span class="hero-kicker">PROPUESTA DE VALOR EMPRESARIAL</span>
+            <h1>Asesoría Lingüística, Cultural e Institucional</h1>
+            <p>
+              OLLIN asesora y apoya a clínicas, ayuntamientos, juzgados, comercios y particulares para eliminar barreras de comunicación mediante la <strong>traducción certificada</strong>, <strong>interpretación bilingüe</strong> y <strong>acompañamiento intercultural</strong> en <strong>Náhuatl</strong> y <strong>Otomí (*Hñähñu*)</strong>.
+            </p>
+            <div class="hero-cta-group">
+              <button class="btn btn-primary btn-auto" id="goToTranslatorBtn">
+                <span>🔄 Probar Traductor Gratuito</span>
+              </button>
+              <button class="btn btn-premium-cta btn-auto" id="goToPricingBtn">
+                <span>👑 Membresía OLLIN Premium ($300 MXN)</span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-card-stat">
+            <div class="stat-item">
+              <span class="stat-number">68</span>
+              <span class="stat-desc">Lenguas indígenas en México</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">Etapa 1</span>
+              <span class="stat-desc">Náhuatl & Otomí prioritarios</span>
+            </div>
+            <div class="stat-item highlight-stat">
+              <span class="stat-number">$300 MXN</span>
+              <span class="stat-desc">Membresía Mensual Premium</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pilares de Asesoría Cultural -->
+        <div class="consulting-grid">
+          <div class="consulting-card">
+            <div class="c-icon">🌿</div>
+            <h3>Protocolo de Cortesía y Trato Digno</h3>
+            <p>En las comunidades otomíes y nahuas, la formalidad y el saludo previo son el fundamento del respeto mutuo. OLLIN capacita a personal de ventanilla y médicos para brindar atención cálida e inclusiva.</p>
+            <ul class="c-list">
+              <li>El saludo formal nunca debe omitirse.</li>
+              <li>Uso correcto de formas reverenciales de respeto.</li>
+              <li>Tono pausado y escucha atenta.</li>
+            </ul>
+          </div>
+
+          <div class="consulting-card">
+            <div class="c-icon">⚖️</div>
+            <h3>Derechos Lingüísticos en México</h3>
+            <p>Conforme al <strong>Artículo 2° Constitucional</strong> y a la <strong>Ley General de Derechos Lingüísticos (LGDLPI)</strong>, las lenguas originarias tienen validez oficial igualitaria.</p>
+            <ul class="c-list">
+              <li>Derecho legal a ser atendido en lengua materna en hospitales y juzgados.</li>
+              <li>Obligación de señalética bilingüe institucional.</li>
+              <li>Prevención activa de discriminación lingüística.</li>
+            </ul>
+          </div>
+
+          <div class="consulting-card">
+            <div class="c-icon">🏢</div>
+            <h3>Soluciones para Instituciones y Negocios</h3>
+            <p>Acompañamiento especializado para entidades públicas y comercios que atienden a poblaciones originarias:</p>
+            <ul class="c-list">
+              <li>Traducción de reglamentos, carteles y recetas.</li>
+              <li>Guiones de perifoneo comunitario y audio.</li>
+              <li>Acreditación de atención accesible.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SECCIÓN DE PLANES Y PRECIOS: $300 MXN AL MES -->
+        <div class="pricing-section-container" id="pricingSection">
+          <div class="pricing-header">
+            <span class="pricing-badge">MODELO DE SERVICIOS OLLIN</span>
+            <h2>Planes de Acceso y Servicios de Traducción</h2>
+            <p>Elige el plan que mejor se adapte a las necesidades de tu institución, negocio o estudio particular:</p>
+          </div>
+
+          <div class="pricing-grid">
+            
+            <!-- Plan Gratuito -->
+            <div class="pricing-card free-card">
+              <div class="p-header">
+                <h3>Acceso Gratuito</h3>
+                <p>Para consultas rápidas y uso público general</p>
+                <div class="p-price">
+                  <span class="price-val">$0</span>
+                  <span class="price-term">Libre</span>
+                </div>
+              </div>
+              <ul class="p-features">
+                <li>✓ Traductor interactivo español a Náhuatl y Otomí.</li>
+                <li>✓ Separación de "¿Cómo se escribe?" y "¿Cómo se lee?".</li>
+                <li>✓ Lectura en voz alta con síntesis fonética básica.</li>
+                <li>✓ Desglose de sonidos especiales y saltillos.</li>
+                <li>✓ Muestra de avisos y señalética esencial.</li>
+                <li class="disabled">✕ Biblioteca completa de trámites y salud.</li>
+                <li class="disabled">✕ Cotizador oficial con folio para dependencias.</li>
+              </ul>
+              <button class="btn btn-secondary" id="freePlanBtn">Usar Traductor Gratuito</button>
+            </div>
+
+            <!-- Plan Premium $300 MXN / mes -->
+            <div class="pricing-card premium-card">
+              <div class="card-ribbon">MÁS POPULAR</div>
+              <div class="p-header">
+                <div class="crown-wrap">👑 OLLIN PREMIUM</div>
+                <h3>Suscripción Mensual</h3>
+                <p>Para instituciones de salud, juzgados, escuelas y negocios</p>
+                <div class="p-price">
+                  <span class="price-val">$300</span>
+                  <span class="price-curr">MXN</span>
+                  <span class="price-term">/ mes</span>
+                </div>
+              </div>
+              <ul class="p-features">
+                <li>✓ <strong>Todo lo del plan gratuito incluido.</strong></li>
+                <li>✓ <strong>Acceso ILIMITADO a la Biblioteca de Documentos:</strong> Más de 180 términos oficiales de salud, trámites, legal y comercio.</li>
+                <li>✓ <strong>Cotizador y Generador de Solicitudes OLLIN:</strong> Genera fichas técnicas formales con folio único institucional.</li>
+                <li>✓ <strong>Envío directo por Correo Electrónico:</strong> Envía solicitudes de proyectos a OLLIN con un solo clic.</li>
+                <li>✓ <strong>Lectura en voz alta con selector de velocidad</strong> (Normal 1.0x / Lenta 0.75x).</li>
+                <li>✓ <strong>Prioridad en asesoría personalizada</strong> para elaboración de materiales bilingües.</li>
+              </ul>
+              
+              <div class="premium-cta-area">
+                <button class="btn btn-primary btn-premium-glow" id="subscribeEmailBtn">
+                  <span>📧 Contratar Plan Premium ($300 MXN/mes)</span>
+                </button>
+                <p class="unlock-prompt">
+                  ¿Ya cuentas con tu clave de cliente? 
+                  <a href="#tab-library" id="unlockDirectLink">Ingresar contraseña aquí</a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- TAB 2: TRADUCTOR & FONÉTICA (PÚBLICO Y LIBRE)              -->
+    <!-- ========================================================= -->
+    <div class="tab-content" id="tab-translator">
+      
+      <!-- Selector de Lengua -->
+      <div class="lang-selector-wrapper">
+        <div class="selector-header">
+          <label class="section-label">Selecciona la lengua originaria:</label>
+          <span class="selector-sub">Etapa 1 OLLIN: Otomí (Hñähñu) y Náhuatl</span>
+        </div>
+        <div class="lang-chips" id="langChips">
+          <button type="button" class="lang-chip active" data-lang="otomi">
+            <span class="chip-icon">🌿</span>
+            <div class="chip-info">
+              <span class="chip-title">Otomí (Hñähñu)</span>
+              <span class="chip-sub">Valle del Mezquital / Querétaro • Etapa 1</span>
+            </div>
+          </button>
+          <button type="button" class="lang-chip" data-lang="nahuatl">
+            <span class="chip-icon">🦅</span>
+            <div class="chip-info">
+              <span class="chip-title">Náhuatl</span>
+              <span class="chip-sub">Central / Huasteca • Etapa 1</span>
+            </div>
+          </button>
+          <button type="button" class="lang-chip" data-lang="maya">
+            <span class="chip-icon">🐆</span>
+            <div class="chip-info">
+              <span class="chip-title">Maya (Yucateco)</span>
+              <span class="chip-sub">Península de Yucatán • Expansión</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid Principal de Traducción -->
+      <main class="translator-grid">
+        
+        <!-- Tarjeta de Entrada (Español) -->
+        <section class="card input-card">
+          <div class="card-header">
+            <div class="header-left">
+              <span class="step-num">1</span>
+              <div>
+                <h2>Español</h2>
+                <span class="card-caption">Texto, aviso o documento</span>
+              </div>
+            </div>
+            <button id="clearBtn" class="action-btn text-btn" title="Limpiar texto">Borrar</button>
+          </div>
+
+          <div class="input-area">
+            <textarea 
+              id="inputText" 
+              placeholder="Escribe aquí un aviso, palabra o frase (ej. bienvenidos, horario de atención, ¿dónde le duele?, acta de nacimiento, ¿cuánto cuesta?, gracias)..."
+              rows="4"
+            ></textarea>
+          </div>
+
+          <!-- Sugerencias Rápidas -->
+          <div class="suggestions-wrapper">
+            <div class="sug-header">
+              <span class="suggestions-label">Plantillas rápidas institucionales:</span>
+            </div>
+            <div class="suggestion-chips" id="suggestionChips">
+              <button class="sug-btn" data-text="bienvenidos">📢 Bienvenidos</button>
+              <button class="sug-btn" data-text="horario de atención">⏰ Horario de atención</button>
+              <button class="sug-btn" data-text="sala de espera">🪑 Sala de espera</button>
+              <button class="sug-btn" data-text="pase por favor">🚪 Pase por favor</button>
+              <button class="sug-btn" data-text="¿dónde le duele?">🩺 ¿Dónde le duele?</button>
+              <button class="sug-btn" data-text="médico">👨‍⚕️ Médico</button>
+              <button class="sug-btn" data-text="acta de nacimiento">📄 Acta de nacimiento</button>
+              <button class="sug-btn" data-text="¿cuánto cuesta esto?">🏷️ ¿Cuánto cuesta?</button>
+              <button class="sug-btn" data-text="muchas gracias por su compra">🛍️ Gracias por su compra</button>
+              <button class="sug-btn" data-text="buenos días">☀️ Buenos días</button>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <button id="translateBtn" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>Traducir y Analizar Fonética</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- Tarjeta de Salida: Separación de Escritura y Lectura -->
+        <section class="card output-card" id="outputCard">
+          <div class="card-header">
+            <div class="header-left">
+              <span class="step-num">2</span>
+              <div>
+                <h2 id="outputLangTitle">Resultado en Otomí (Hñähñu)</h2>
+                <span class="card-caption">Interpretación precisa para servicios</span>
+              </div>
+            </div>
+            <span class="badge" id="variantBadge">Norma Oficial INALI</span>
+          </div>
+
+          <!-- Estado Inicial Placeholder -->
+          <div class="placeholder-state" id="placeholderState">
+            <div class="placeholder-icon">📖</div>
+            <h3>Escribe un texto o selecciona una plantilla</h3>
+            <p>OLLIN te devolverá de forma separada <strong>cómo se escribe oficialmente</strong> y <strong>cómo se lee en voz alta</strong>.</p>
+          </div>
+
+          <!-- Contenedor de Resultados -->
+          <div class="results-content hidden" id="resultsContent">
+            
+            <!-- SECCIÓN 1: CÓMO SE ESCRIBE -->
+            <div class="output-box writing-box">
+              <div class="box-tag">
+                <span class="box-icon">✍️</span>
+                <span class="box-title">¿CÓMO SE ESCRIBE?</span>
+                <span class="subtag">Ortografía oficial y diacríticos</span>
+              </div>
+              <div class="phrase-display" id="writtenText">---</div>
+              <div class="box-actions">
+                <button class="action-btn copy-btn" id="copyWrittenBtn" title="Copiar texto escrito">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                  Copiar Escritura
+                </button>
+              </div>
+            </div>
+
+            <!-- SECCIÓN 2: CÓMO SE TIENE QUE LEER -->
+            <div class="output-box reading-box">
+              <div class="box-tag">
+                <span class="box-icon">🗣️</span>
+                <span class="box-title">¿CÓMO SE TIENE QUE LEER?</span>
+                <span class="subtag">Guía de pronunciación para hispanohablantes</span>
+              </div>
+              <div class="phrase-display reading-text" id="readingText">---</div>
+              
+              <!-- Barra de Control de Voz y Audio -->
+              <div class="audio-controls-panel">
+                <div class="speed-toggle">
+                  <span class="speed-label">Velocidad:</span>
+                  <button class="speed-btn active" data-speed="1.0">Normal (1.0x)</button>
+                  <button class="speed-btn" data-speed="0.75">Lenta / Práctica (0.75x)</button>
+                </div>
+                <div class="audio-btn-group">
+                  <button class="btn btn-audio" id="listenBtn" title="Escuchar pronunciación en voz alta">
+                    <span class="speaker-icon">🔊</span>
+                    <span id="listenBtnLabel">Lectura en Voz Alta</span>
+                    <div class="sound-wave hidden" id="soundWave">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                  </button>
+                  <button class="action-btn copy-btn" id="copyReadingBtn" title="Copiar fonética">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                    Copiar Fonética
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECCIÓN 3: DESGLOSE DE SONIDOS -->
+            <div class="sounds-breakdown" id="soundsBreakdown">
+              <h4>💡 Guía de articulación y sonidos especiales:</h4>
+              <div class="breakdown-list" id="breakdownList"></div>
+            </div>
+
+          </div>
+
+          <!-- Estado de Error -->
+          <div class="error-state hidden" id="errorState">
+            <div class="error-icon">🔍</div>
+            <h3 id="errorMessage">Término no registrado aún</h3>
+            <p id="errorAdvice">Puedes revisar la biblioteca de avisos o solicitar la traducción especializada a OLLIN.</p>
+          </div>
+        </section>
+      </main>
+
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- TAB 3: AVISOS & SEÑALÉTICA INSTITUCIONAL (MUESTRA)         -->
+    <!-- ========================================================= -->
+    <div class="tab-content" id="tab-notices">
+      <section class="section-container">
+        <div class="section-header-box">
+          <div class="header-text">
+            <h2>📢 Catálogo de Avisos y Señalética Básica</h2>
+            <p>Carteles y avisos bilingües de uso frecuente para oficinas de gobierno, clínicas de salud y comercios.</p>
+          </div>
+          <div class="notice-lang-filter" id="noticeLangFilter">
+            <button class="pill-btn active" data-nlang="otomi">Ver en Otomí</button>
+            <button class="pill-btn" data-nlang="nahuatl">Ver en Náhuatl</button>
+          </div>
+        </div>
+
+        <div class="notices-grid" id="noticesGrid">
+          <!-- Dinámico -->
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- TAB 4: BIBLIOTECA DE DOCUMENTOS (BLOQUEO PREMIUM)          -->
+    <!-- ========================================================= -->
+    <div class="tab-content" id="tab-library">
+      
+      <!-- PANTALLA DE BLOQUEO PREMIUM (Visible si no está desbloqueado) -->
+      <div class="premium-lock-screen" id="libraryLockScreen">
+        <div class="lock-card">
+          <div class="lock-icon-wrap">🔒</div>
+          <span class="lock-pill">CONTENIDO EXCLUSIVO OLLIN PREMIUM</span>
+          <h2>Biblioteca Completa de Documentos Oficiales</h2>
+          <p class="lock-desc">
+            Esta sección contiene más de <strong>180 documentos, trámites de registro civil, cuestionarios médicos y señalética avanzada</strong> en Náhuatl y Otomí para instituciones públicas y negocios.
+          </p>
+          
+          <div class="lock-pricing-highlight">
+            <span class="l-price">$300 MXN</span>
+            <span class="l-term">por mes</span>
+          </div>
+
+          <!-- Formulario para ingresar contraseña de cliente -->
+          <div class="password-unlock-box">
+            <label for="premiumKeyInput">¿Ya cuentas con tu clave de acceso OLLIN?</label>
+            <div class="input-with-button">
+              <input type="password" id="premiumKeyInput" placeholder="Introduce tu contraseña de cliente..." autocomplete="off" />
+              <button class="btn btn-primary" id="unlockBtn">
+                <span>Desbloquear</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="lock-footer-cta">
+            <span>¿Aún no tienes suscripción?</span>
+            <button class="btn btn-secondary btn-auto" id="requestPremiumFromLibraryBtn">
+              <span>📧 Solicitar Acceso por Correo ($300 MXN)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENIDO REAL DE LA BIBLIOTECA (Se muestra solo al desbloquear) -->
+      <div class="premium-unlocked-content hidden" id="libraryUnlockedContent">
+        <section class="section-container">
+          <div class="explorer-header">
+            <div>
+              <div class="unlocked-badge">👑 ACCESO PREMIUM DESBLOQUEADO</div>
+              <h2>📚 Biblioteca Completa de Vocabulario y Documentos Oficiales</h2>
+              <p>Explora términos clasificados para trámites, salud, comercio y vida comunitaria en <strong id="explorerLangName">Otomí (Hñähñu)</strong>.</p>
+            </div>
+            <div class="search-box">
+              <input type="text" id="librarySearchInput" placeholder="Buscar palabra o aviso en la biblioteca..." />
+            </div>
+          </div>
+
+          <div class="filter-pills" id="categoryFilters">
+            <button class="cat-pill active" data-cat="todas">Todas</button>
+            <button class="cat-pill" data-cat="avisos">Avisos & Señalética</button>
+            <button class="cat-pill" data-cat="salud">Salud & Clínicas</button>
+            <button class="cat-pill" data-cat="tramites">Trámites & Legal</button>
+            <button class="cat-pill" data-cat="comercio">Comercio & Negocios</button>
+            <button class="cat-pill" data-cat="cortesia">Cortesía & Saludos</button>
+            <button class="cat-pill" data-cat="comunidad">Comunidad & Familia</button>
+            <button class="cat-pill" data-cat="naturaleza">Naturaleza</button>
+            <button class="cat-pill" data-cat="numeros">Números</button>
+          </div>
+
+          <div class="dictionary-grid" id="dictionaryGrid">
+            <!-- Dinámico -->
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- TAB 5: COTIZADOR DE SERVICIOS (BLOQUEO PREMIUM + EMAIL)    -->
+    <!-- ========================================================= -->
+    <div class="tab-content" id="tab-quote">
+      
+      <!-- PANTALLA DE BLOQUEO PREMIUM PARA COTIZADOR -->
+      <div class="premium-lock-screen" id="quoteLockScreen">
+        <div class="lock-card">
+          <div class="lock-icon-wrap">📋</div>
+          <span class="lock-pill">HERRAMIENTA PROFESIONAL OLLIN PREMIUM</span>
+          <h2>Generador y Cotizador Oficial de Proyectos</h2>
+          <p class="lock-desc">
+            Esta herramienta emite <strong>Fichas Técnicas con Folio Único</strong> y cálculo formal de proyectos para clínicas, ayuntamientos y empresas que requieren facturación o convenio formal.
+          </p>
+          
+          <div class="lock-pricing-highlight">
+            <span class="l-price">$300 MXN</span>
+            <span class="l-term">por mes</span>
+          </div>
+
+          <div class="password-unlock-box">
+            <label for="quoteKeyInput">Ingresa tu contraseña de suscriptor:</label>
+            <div class="input-with-button">
+              <input type="password" id="quoteKeyInput" placeholder="Introduce tu clave..." autocomplete="off" />
+              <button class="btn btn-primary" id="unlockQuoteBtn">
+                <span>Desbloquear</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="lock-footer-cta">
+            <button class="btn btn-secondary btn-auto" id="requestPremiumFromQuoteBtn">
+              <span>📧 Contratar Plan por Correo ($300 MXN)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULARIO DE COTIZACIÓN REAL (DESBLOQUEADO) -->
+      <div class="premium-unlocked-content hidden" id="quoteUnlockedContent">
+        <section class="section-container">
+          <div class="quote-card">
+            <div class="quote-header">
+              <div class="unlocked-badge">👑 ACCESO PREMIUM ACTIVO</div>
+              <h3>📋 Cotizador Oficial y Solicitud de Servicios OLLIN</h3>
+              <p>Genera la ficha técnica y envíala directamente por correo electrónico a la microempresa OLLIN:</p>
+            </div>
+
+            <div class="quote-form-grid">
+              <div class="form-group">
+                <label>Tipo de Institución o Solicitante:</label>
+                <select id="qOrgType">
+                  <option value="Institución de Salud (Clínica/Hospital)">Institución de Salud (Clínica/Hospital)</option>
+                  <option value="Organismo Público / Gobierno / Ayuntamiento">Organismo Público / Gobierno / Ayuntamiento</option>
+                  <option value="Negocio / Comercio / Empresa">Negocio / Comercio / Empresa</option>
+                  <option value="Institución Educativa (Escuela/Universidad)">Institución Educativa (Escuela/Universidad)</option>
+                  <option value="Persona Particular">Persona Particular</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Servicio Requerido:</label>
+                <select id="qService">
+                  <option value="Traducción escrita de avisos y documentos">Traducción escrita de avisos y documentos</option>
+                  <option value="Grabación de audios / perifoneo bilingüe">Grabación de audios / perifoneo bilingüe</option>
+                  <option value="Interpretación presencial o por videollamada">Interpretación presencial o por videollamada</option>
+                  <option value="Asesoría cultural y capacitación de personal">Asesoría cultural y capacitación de personal</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Lengua Indígena Principal:</label>
+                <select id="qLanguage">
+                  <option value="Otomí (Hñähñu) - Valle del Mezquital / Querétaro">Otomí (Hñähñu) - Valle del Mezquital / Querétaro</option>
+                  <option value="Náhuatl - Centro / Huasteca">Náhuatl - Centro / Huasteca</option>
+                  <option value="Ambas (Náhuatl y Otomí)">Ambas (Náhuatl y Otomí)</option>
+                  <option value="Maya Peninsular">Maya Peninsular</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Nombre de Contacto o Dependencia:</label>
+                <input type="text" id="qContact" placeholder="Ej. Centro de Salud San Ildefonso / Lic. Juan Pérez" />
+              </div>
+
+              <div class="form-group full-width">
+                <label>Descripción del documento o material informativo a traducir:</label>
+                <textarea id="qDetails" rows="3" placeholder="Describe brevemente el cartel, aviso o trámite que necesitas comunicar..."></textarea>
+              </div>
+            </div>
+
+            <div class="quote-actions">
+              <button class="btn btn-primary" id="generateQuoteBtn">
+                <span>Generar Resumen de Solicitud Formal con Folio</span>
+              </button>
+            </div>
+
+            <!-- Resultado de la Ficha Técnica y Envío por Correo -->
+            <div class="quote-summary-box hidden" id="quoteSummaryBox">
+              <div class="summary-badge">PROPUESTA DE SERVICIO REGISTRADA</div>
+              <div id="quoteSummaryText"></div>
+              
+              <div class="quote-delivery-actions">
+                <!-- BOTÓN PRINCIPAL: ENVIAR POR CORREO ELECTRÓNICO -->
+                <button class="btn btn-email-send" id="sendByEmailBtn">
+                  <span class="btn-icon">📧</span>
+                  <span>Enviar esta Solicitud por Correo a OLLIN</span>
+                </button>
+                <button class="action-btn" id="copyQuoteBtn">
+                  <span>📋 Copiar Texto</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- Footer OLLIN -->
+    <footer class="app-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="ollin-mini-logo">◈ OLLIN</span>
+          <p>Microempresa de Servicios Lingüísticos e Interpretación de Lenguas Indígenas de México</p>
+        </div>
+        <p class="footer-copy">Membresía Premium $300 MXN/mes • Normas INALI • Funcionamiento Offline & Portable</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="dictionary-data.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
